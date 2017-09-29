@@ -1,6 +1,7 @@
 # AstroCalc
 
-This library is a Dart port of the awesome Vladimir Agafonkin (@mourner)'s JavaScript library for calculating sun and moon positions and phases for a given location and time.
+This library is a Dart port of the awesome Vladimir Agafonkin (@mourner)'s JavaScript
+library for calculating sun and moon positions and phases for a given location and time.
 
 Calculations for other solar system bodies are also in the works.
 
@@ -16,10 +17,12 @@ See the `examples` folder for usage examples.
 
 ```dart
 // Latitude and longitude in degrees
-BaseCalc baseCalcChild = BaseCalcChild({ DateTime date, num longitude, num latitude })
+var baseCalcChild = BaseCalcChild({ DateTime date, num longitude, num latitude })
 ```
 
-All celestial body classes inherit from the abstract class BaseCalc. On instantiation, they all calculate and expose the following properties of the body for the provided location and time (each is a `Map`):
+All celestial body classes inherit from the abstract class BaseCalc. On instantiation,
+they all calculate and expose the following properties of the body for the provided
+location and time (each is a `Map`):
 
 | Property           | Description                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------ |
@@ -37,7 +40,7 @@ The coordinate systems are returned in radians. For more information on each, se
 ### SunCalc
 
 ```dart
-SunCalc sunCalc = new SunCalc({ DateTime date, num longitude, num latitude })
+var sunCalc = new SunCalc({ DateTime date, num longitude, num latitude })
 ```
 
 In addition to the coordinate systems, SunCalc calculates the following times (accessible as properties of the `Map` `sunCalc.times`)
