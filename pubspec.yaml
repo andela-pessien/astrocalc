@@ -1,7 +1,7 @@
 name: astrocalc
 description: A library for calculating sun and moon positions and phases.
 version: 0.0.1
-homepage: https://pub.dartlang.org/packages/astrocalc
+homepage: https://github.com/andela-pessien/astrocalc
 author: PJ Essien <princess-jewel.essien@andela.com>
 
 environment:
