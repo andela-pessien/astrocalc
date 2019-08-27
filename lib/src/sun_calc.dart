@@ -19,7 +19,7 @@ class SunCalc extends BaseCalc {
     double mA = meanAnomaly(days);
     double center = rad * (1.9148 * sin(mA) + 0.02 * sin(2 * mA) + 0.0003 * sin(3 * mA));
 
-    return mA + center + planetocentricPerihelion['Earth'] + PI;
+    return mA + center + planetocentricPerihelion['Earth'] + pi;
   }
 
   double eclipticLatitude() {
@@ -30,7 +30,7 @@ class SunCalc extends BaseCalc {
     double Jnoon, Jset, Jrise;
     Map<String, DateTime> solarTimes;
 
-    int julianCycle = (daysSince2000 - sunTransit['Earth'][0] - longitude / (2 * PI)).round();
+    int julianCycle = (daysSince2000 - sunTransit['Earth'][0] - longitude / (2 * pi)).round();
     double noonTransit = approxTransit(0, longitude, julianCycle);
     double mA = meanAnomaly(noonTransit);
     double eclipticLng = eclipticLongitude(days: noonTransit);
@@ -55,7 +55,7 @@ class SunCalc extends BaseCalc {
 
   static double approxTransit(num hAngle, double longitude, int julianCycle) {
     double J0 = sunTransit['Earth'][0];
-    return J0 + (hAngle + longitude) / (2 * PI) + julianCycle;
+    return J0 + (hAngle + longitude) / (2 * pi) + julianCycle;
   }
 
   static double transitJulian(double transit, double mA, double eclipticLng) {

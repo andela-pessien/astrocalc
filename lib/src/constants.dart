@@ -8,10 +8,10 @@ const julian1970 = 2440588;
 const julian2000 = 2451545;
 
 /// One radian is one-one-hundred-and-eightieth of pi
-const rad = PI / 180;
+const rad = pi / 180;
 
 /// DateTime object for 28th September, 2017 at 12 noon UTC
-final sept28Date = new DateTime.utc(2017, DateTime.SEPTEMBER, 28, 12);
+final sept28Date = new DateTime.utc(2017, DateTime.september, 28, 12);
 
 /// True obliquity (in degrees) on 28th September, 2017 at 12 noon
 const sept28Obliquity = 23.43697;
